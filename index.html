@@ -42,6 +42,9 @@
           "applicationCategory": "CommunicationApplication",
           "operatingSystem": "Android",
           "creator": { "@id": "#rizbi-khan" },
+          "softwareVersion": "1.23",
+          "fileSize": "3 MB",
+          "downloadUrl": "https://l72184908-blip.github.io/MoonChat-v1.23_2_bijx.apk",
           "description": "A private, ultra-light (4 MB) chat app for text chat, photo sharing and voice messages. Screenshots and screen recording are blocked, shared photos do not save to the recipient's phone, and sent messages cannot be deleted."
         }
       ]
@@ -148,6 +151,15 @@
       .btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
       @media (prefers-color-scheme: dark) { .btn.primary { background: var(--gold); color: #191204; border-color: var(--gold); } }
       .btn.primary:hover { opacity: .92; }
+      .btn.download {
+        background: #f0b93f; color: #191204; border-color: #f0b93f;
+        min-height: 54px; padding: 12px 24px; font-size: 16.5px;
+        box-shadow: 0 10px 24px rgba(185, 126, 14, 0.35);
+      }
+      .btn.download svg { width: 20px; height: 20px; }
+      .btn.download:hover { background: #f5c95c; border-color: #f5c95c; opacity: 1; }
+      .btn.download small { font-weight: 600; opacity: .75; font-size: 13.5px; }
+      .download-note { font-size: 14px; color: var(--muted); font-weight: 600; margin: 10px 0 0; }
       .copy-note { font-size: 14px; color: var(--gold-strong); font-weight: 700; min-height: 1.4em; }
 
       .fact-strip {
@@ -291,6 +303,10 @@
           I work through deep research first, then design and build the whole thing myself.
         </p>
         <div class="cta-row">
+          <a class="btn download" href="https://l72184908-blip.github.io/MoonChat-v1.23_2_bijx.apk" download="MoonChat-v1.23_2_bijx.apk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Moon-Chat APK <small>v1.23 · Android</small>
+          </a>
           <a class="btn primary" href="mailto:mrizbi99@gmail.com">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
             Email me
@@ -308,6 +324,7 @@
             GitHub
           </a>
         </div>
+        <p class="download-note">MoonChat v1.23 for Android — tap Download and the APK file saves straight to your phone.</p>
         <p class="copy-note" id="copyNote" role="status" aria-live="polite"></p>
         <div class="fact-strip">
           <span><b>Moon-Chat</b> — my own app</span>
